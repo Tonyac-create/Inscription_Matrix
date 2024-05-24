@@ -34,5 +34,5 @@ redButton.addEventListener("click", handleSubmitRed)
 const handleName = () => {
     const name = inputName.value
     messageBlue.textContent = `"Tu n’es qu’un esclave ${name}, comme tous les autres tu es né enchaîné. Le monde est une prison où il n’y a ni espoir ni odeur ni saveur. Une prison pour ton esprit."`
-    messageRed.textContent = `Welcome to the Real World, ${name}`
+    messageRed.textContent = `"Welcome to the Real World, ${name}!"`
 }
