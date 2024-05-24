@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <title>Inscription</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main id="main" class="flex justify-center items-center relative">
+        <section id="section" class="bg-slate-900/75 w-[900px] rounded-md p-8 flex gap-10">
+            <div class="w-1/2">
+                <h1
+                    class="text-slate-200 text-6xl mb-7 bg-gradient-to-r from-lime-600 to-lime-900 text-transparent bg-clip-text">
+                    MATRIX</h1>
+                <p class="text-slate-200 text-left mb-3.5">"Tu prends la pilule bleue, l’histoire s’arrête là, tu te réveilles
+                    dans ton lit, et tu crois ce que tu veux. Tu prends la pilule rouge, tu restes au Pays des
+                    Merveilles et
+                    je te montre jusqu’où va le terrier."</p>
+                <span class="bg-lime-900 text-slate-200 rounded-xl py-1 px-3 tracking-wide">Morpheus</span>
+            </div>
+            <div class="w-1/2 flex flex-col items-center my-auto">
+                <p class="text-slate-200 text-left mb-7">Alors que déciderez-vous?</p>
+                <div class="flex gap-4">
+                    <img id="lapin" class="rounded-lg size-24" src="./pilule_rouge.jpg" alt="pilule rouge">
+                    <img id="pilule" class="rounded-lg size-24" src="./pilule_bleu.jpg" alt="pilule bleu">
+                </div>
+            </div>
+            <form class="flex flex-col" action="" id="myForm">
+                <label class="text-lime-600 mb-1" for="name">Nom complet</label>
+                <input class="rounded-md focus:outline-none focus:ring-2 ring-lime-600 mb-2 p-1" id="name" type="text"
+                    aria-label="Entrez votre nom complet" required>
+                <label class="text-lime-600 mb-1" for="surname">Pseudonyme</label>
+                <input class="rounded-md focus:outline-none focus:ring-2 ring-lime-600 mb-2 p-1" id="surname"
+                    type="text" aria-label="Entre votre pseudonyme" onchange="handleName()" required>
+                <label class="text-lime-600 mb-1" for="email">Adresse mail</label>
+                <input class="rounded-md focus:outline-none focus:ring-2 ring-lime-600 mb-2 p-1" id="email" type="email"
+                    aria-label="Entrez votre mot de passe" required>
+                <label class="text-lime-600 mb-1" for="password">Mot de passe</label>
+                <input class="rounded-md focus:outline-none focus:ring-2 ring-lime-600 mb-2 p-1" id="password"
+                    type="password" aria-label="Entrez votre mot de passe" required>
+                <div class="flex gap-4 mt-5 mx-auto">
+                    <button id="blueButton" class="w-[60px] duration-700 bg-lime-900 rounded-md text-slate-200 py-1 px-2 hover:scale-125">Bleu</button>
+                    <button id="redButton" class="w-[60px] duration-700 bg-lime-900 rounded-md text-slate-200 py-1 px-2 hover:scale-125">Rouge</button>
+                </div>
+            </form>
+        </section>
+        <p id="messageBlue" class="messageEnd absolute top-50% left-50% mx-20 text-slate-200"></p>
+    </main>
+    <section id="mainRed" class="sectionRed">
+        <p id="messageRed" class="messageEndRed mx-20 text-lime-600 text-4xl background"></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

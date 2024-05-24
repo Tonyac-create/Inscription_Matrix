@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Matrix';
+    src: url('./fonts/Matrix-MZ4P.ttf') format('truetype')
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: 'Matrix', sans-serif;
+    position: relative;
+}
+
+h1 {
+    animation: glitch 1s infinite;
+}
+main {
+    height: 100vh;
+    background-image: url(./bg_matrix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background {
+    animation: glitch 1s infinite;
+}
+
+.displayAnimation {
+    animation: shrink 3s forwards;
+}
+
+p, form {
+    font-family: "Reddit Mono", sans-serif;
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes shrinkInverse {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes glitch {
+    0% {
+        clip: rect(10px, 9999px, 130px, 0);
+        transform: skew(0.9deg);
+    }
+
+    10% {
+        clip: rect(60px, 9999px, 100px, 0);
+        transform: skew(-0.9deg);
+    }
+
+    20% {
+        clip: rect(30px, 9999px, 150px, 0);
+        transform: skew(0.9deg);
+    }
+
+    30% {
+        clip: rect(100px, 9999px, 200px, 0);
+        transform: skew(-0.9deg);
+    }
+
+    40% {
+        clip: rect(50px, 9999px, 180px, 0);
+        transform: skew(0.9deg);
+    }
+
+    50% {
+        clip: rect(120px, 9999px, 220px, 0);
+        transform: skew(-0.9deg);
+    }
+
+    60% {
+        clip: rect(80px, 9999px, 140px, 0);
+        transform: skew(0.9deg);
+    }
+
+    70% {
+        clip: rect(40px, 9999px, 110px, 0);
+        transform: skew(-0.9deg);
+    }
+
+    80% {
+        clip: rect(90px, 9999px, 190px, 0);
+        transform: skew(0.9deg);
+    }
+
+    90% {
+        clip: rect(70px, 9999px, 170px, 0);
+        transform: skew(-0.9deg);
+    }
+
+    100% {
+        clip: rect(30px, 9999px, 130px, 0);
+        transform: skew(0.9deg);
+    }
+}
+
+.messageEnd {
+    display: none;
+}
+
+.displayMessageEnd {
+    display: block;
+    animation: shrinkInverse 5s forwards;
+}
+
+.messageEndRed {
+    display: none;
+}
+
+.displayMessageEndRed {
+    display: block;
+    animation: shrinkInverse 5s forwards;
+}
+
+.sectionRed {
+    display: none;
+}
+
+.displayMainRedButton {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
