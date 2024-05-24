@@ -56,59 +56,49 @@ p, form {
 
 @keyframes glitch {
     0% {
-        clip: rect(10px, 9999px, 130px, 0);
-        transform: skew(0.9deg);
-    }
-
-    10% {
-        clip: rect(60px, 9999px, 100px, 0);
-        transform: skew(-0.9deg);
-    }
-
-    20% {
-        clip: rect(30px, 9999px, 150px, 0);
-        transform: skew(0.9deg);
-    }
-
-    30% {
-        clip: rect(100px, 9999px, 200px, 0);
-        transform: skew(-0.9deg);
-    }
-
-    40% {
-        clip: rect(50px, 9999px, 180px, 0);
-        transform: skew(0.9deg);
-    }
-
-    50% {
-        clip: rect(120px, 9999px, 220px, 0);
-        transform: skew(-0.9deg);
-    }
-
-    60% {
-        clip: rect(80px, 9999px, 140px, 0);
-        transform: skew(0.9deg);
-    }
-
-    70% {
-        clip: rect(40px, 9999px, 110px, 0);
-        transform: skew(-0.9deg);
-    }
-
-    80% {
-        clip: rect(90px, 9999px, 190px, 0);
-        transform: skew(0.9deg);
-    }
-
-    90% {
-        clip: rect(70px, 9999px, 170px, 0);
-        transform: skew(-0.9deg);
-    }
-
-    100% {
-        clip: rect(30px, 9999px, 130px, 0);
-        transform: skew(0.9deg);
-    }
+        transform: translate(0);
+        opacity: 1;
+      }
+      10% {
+        transform: translate(-0.1px, 0.1px);
+        opacity: 0.8;
+      }
+      20% {
+        transform: translate(0.1px, -0.1px);
+        opacity: 0.8;
+      }
+      30% {
+        transform: translate(-0.1px, 0.1px);
+        opacity: 1;
+      }
+      40% {
+        transform: translate(0.1px, -0.1px);
+        opacity: 0.9;
+      }
+      50% {
+        transform: translate(-0.1px, 0.1px);
+        opacity: 0.9;
+      }
+      60% {
+        transform: translate(0.1px, -0.1px);
+        opacity: 1;
+      }
+      70% {
+        transform: translate(-0.1px, 0.1px);
+        opacity: 0.8;
+      }
+      80% {
+        transform: translate(0.1px, -0.1px);
+        opacity: 0.9;
+      }
+      90% {
+        transform: translate(-0.1px, 0.1px);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(0);
+        opacity: 1;
+      }
 }
 
 .messageEnd {
